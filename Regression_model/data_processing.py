@@ -1,8 +1,13 @@
+from pathlib import Path
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
+
+
 def data_processing():
-    raw_data = pd.read_csv(r'D:\SupportDesk\model_train\task-specific-datasets\banking_data\train.csv', encoding='latin-1')
-    raw_test_data = pd.read_csv(r'D:\SupportDesk\model_train\task-specific-datasets\banking_data\test.csv', encoding='latin-1')
+    dataset_dir = Path(__file__).resolve().parent.parent / 'task-specific-datasets' / 'banking_data'
+    raw_data = pd.read_csv(dataset_dir / 'train.csv', encoding='latin-1')
+    raw_test_data = pd.read_csv(dataset_dir / 'test.csv', encoding='latin-1')
     train_messages, valid_messages, train_class_labels, valid_class_labels = train_test_split(
         raw_data['text'].values.astype('U'),
         raw_data['category'].values.astype('U'),
