@@ -1,0 +1,46 @@
+Model: uni_gram
+Accuracy: 0.8773
+F1 Score: 0.8772
+Model: bi_gram
+Accuracy: 0.7838
+F1 Score: 0.7814
+Model: uni_gram_and_bi_gram
+Accuracy: 0.8545
+F1 Score: 0.8531
+
+
+score for c in regression_model:
+
+Model: C=0.1
+Accuracy: 0.7208
+F1 Score: 0.6970
+Model: C=0.5
+Accuracy: 0.8503
+F1 Score: 0.8471
+Model: C=1.0
+Accuracy: 0.8773
+F1 Score: 0.8772
+Model: C=2.0
+Accuracy: 0.8929
+F1 Score: 0.8930
+Model: C=5.0
+Accuracy: 0.8997
+F1 Score: 0.8999
+Model: C=10.0
+Accuracy: 0.9000
+F1 Score: 0.9001
+Model: C=7
+Accuracy: 0.8946
+F1 Score: 0.8950
+Model: C=10
+Accuracy: 0.8941
+F1 Score: 0.8944
+Model: C=15
+Accuracy: 0.8931
+F1 Score: 0.8934
+Model: C=20
+Accuracy: 0.8911
+F1 Score: 0.8915
+Model: C=30
+Accuracy: 0.8906
+F1 Score: 0.8909
